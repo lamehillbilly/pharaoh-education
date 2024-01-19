@@ -5,10 +5,6 @@ import Link from "next/link";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button";
 
@@ -42,7 +38,7 @@ export default async function Home() {
             <h3 className="text-lg line-clamp-2 font-bold">{post.title}</h3>
             <p className = "line-clamp-3 text-sm mt-2 text-gray-600 dark:text-gray-300">{post.smallDescription}</p>
             <Button asChild className="w-full mt-7">
-              <Link href={`blog/${post.currentSlug}`}>Learn More</Link>
+              <Link href={`/blog/${post.currentSlug}`}>Learn More</Link>
             </Button>
           </CardContent>
         </Card>
